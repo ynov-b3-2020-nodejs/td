@@ -1,11 +1,11 @@
 {
-    "name": "@ynov-2020/random",
-    "version": "1.0.0",
-    "main": "index.js",
-    "repository": "https://github.com/ynov-b3-2020-nodejs/td",
-    "license": "MIT",
-    "private": false,
-    "scripts": {
-        "start": "node index.js"
-    }
+  "name": "@ynov-2020/random",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/ynov-b3-2020-nodejs/td",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "start": "node index.js"
+  }
 }

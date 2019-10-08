@@ -1,0 +1,13 @@
+{
+  "name": "@ynov-2020/learnyounode",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "learnyounode",
+    "verify": "learnyounode verify"
+  },
+  "dependencies": {
+    "learnyounode": "^4.1.0"
+  }
+}

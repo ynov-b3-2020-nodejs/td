@@ -1,2 +1,9 @@
-const [node, path, ...params] = process.argv;
-console.log(params.reduce((accumulator, currentValue) => accumulator + parseInt(currentValue), 0));
+
+const [node, path, ...argsToSum] = process.argv
+
+
+const sum = (first, second) => first + second;
+
+const result = argsToSum.map(parseInt).reduce(sum, 0)
+
+console.log(result);

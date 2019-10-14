@@ -12,7 +12,9 @@ function parseTime(time) {
 }
 
 function unixTime(time) {
-    return {unixtime: time.getTime()}
+    return {
+        unixtime: time.getTime()
+    }
 }
 
 let parseQuery = function (url) {
@@ -22,7 +24,7 @@ let parseQuery = function (url) {
         case '/api/unixtime':
             return unixTime(new Date(url.query.iso));
         default:
-            return 'please enter a valid endpoint url'
+            return 'Rentrez une bonne url'
     }
 };
 
@@ -36,5 +38,5 @@ http.createServer(function (request, response) {
         response.end()
     }
 }).listen(+port, function () {
-    console.log('Server listening on http://localhost:%s', port)
+    console.log('Serveur en écoute sur http://localhost:%s', port)
 });

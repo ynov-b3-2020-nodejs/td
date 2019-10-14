@@ -9,6 +9,12 @@ http.createServer(function (req, res) {
     const urlObj = url.parse(req.url);    
 
     if (urlObj.pathname.includes('/api/')) {
+        
+        if (!urlObj.query.includes('iso=')) {
+            res.writeHead(405, { 'content-type': 'Not Acceptable' });
+            res.end('406 Entry Not Acceptable');
+        }
+
         const dateObj = new Date(urlObj.query.replace('iso=', ''));
 
         switch (urlObj.pathname) {

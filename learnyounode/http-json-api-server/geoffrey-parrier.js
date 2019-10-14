@@ -10,9 +10,6 @@ http.createServer((req, res) => {
 
     res.writeHead(200, {'Content-type': 'application/JSON'});
 
-    switch (req.url.pathname) {
-
-    }
     if (req.url.match('/api/parsetime')) {
         res.write(JSON.stringify({
             hour: date.getHours(),

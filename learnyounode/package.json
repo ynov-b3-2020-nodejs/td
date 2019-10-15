@@ -8,6 +8,8 @@
     "verify": "learnyounode verify"
   },
   "dependencies": {
-    "learnyounode": "^4.1.0"
+    "bl": "^4.0.0",
+    "learnyounode": "^4.1.0",
+    "through2-map": "^3.0.0"
   }
 }
